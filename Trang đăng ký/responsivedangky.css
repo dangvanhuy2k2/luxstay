@@ -1,0 +1,36 @@
+/* tablet and pc */
+
+@media screen and (max-width: 1023px) {
+    .form {
+        margin-top: -20px;
+    }
+    .row.reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 739px) {
+    .header__left-logo {
+        display: block;
+    }
+    .welcome {
+        padding: 15px 0 45px;
+    }
+    .welcome__title {
+        font-size: 2rem;
+    }
+    .welcom__des {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .icon-facebook,
+    .icon-google {
+        right: 10px;
+    }
+}

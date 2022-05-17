@@ -1,0 +1,31 @@
+@media screen and (max-width: 1023px) {
+    .body__layout {
+        width: 80%;
+    }
+    .body__download-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .body__layout::after {
+        display: none;
+    }
+    .body__content {
+        padding: 20px 15px;
+    }
+    .border-mobile {
+        border-top: 1px solid #EAEDF3;
+    }
+    .footer__bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__copyright {
+        width: 100%;
+        text-align: center;
+    }
+    .header__left-logo {
+        display: block;
+    }
+}

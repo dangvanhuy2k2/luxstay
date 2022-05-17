@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500;1,600&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../asset/css/base.css" />
+    <link rel="stylesheet" href="../asset/css/grid.css" />
+    <link rel="stylesheet" href="./trangchuluxstay.css">
+    <link rel="stylesheet" href="./responsiveTrangchu.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid wide">
+            <header>
+                <div class="grid wide header-wrapper">
+                    <div class="header__left">
+                        <div class="header__left-logo">
+                            <svg version="1.1" viewBox="0 0 50 50" class="svg-icon svg-fill" style="width: 50px; height: 50px">
+                  <path
+                    pid="0"
+                    d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"
+                  ></path>
+                </svg>
+                        </div>
+                        <div class="header__left-search">
+                            <div class="header__search-bar header__item">
+                                <i class="fas fa-search search-bar__icon header-icon"></i>
+                                <input type="text" class="search-bar__input header-text" placeholder="Tìm kiếm" />
+                            </div>
+                            <div class="header__search-date header__item">
+                                <i class="far fa-calendar-alt search-date__icon header-icon"></i>
+                                <span class="search-date__text header-text">Ngày</span>
+                            </div>
+                            <div class="header__search-user">
+                                <div class="search-user__number form-list__user">
+                                    <i class="fas fa-user search-user__icon header-icon"></i>
+                                    <span class="search-user__text header-text">Số khách</span>
+                                    <div class="list__user">
+                                        <div class="list__user-top">
+                                            <div class="list__user-item">
+                                                <div class="list__user-text">
+                                                    <span class="list__user-name header-text">
+                              Người lớn
+                            </span>
+                                                    <span class="list__user-item-des"></span>
+                                                </div>
+                                                <div class="list__user-action">
+                                                    <span class="list__user-number"> 0 </span>
+                                                    <i class="fas fa-plus list__user-icon"></i>
+                                                </div>
+                                            </div>
+                                            <div class="list__user-item">
+                                                <div class="list__user-text">
+                                                    <span class="list__user-name header-text">Trẻ em</span
+                            >
+                            <span class="list__user-item-des"
+                              >Tuổi từ 2–12</span
+                            >
+                          </div>
+                          <div class="list__user-action">
+                            <span class="list__user-number"> 0 </span>
+                                                    <i class="fas fa-plus list__user-icon"></i>
+                                                </div>
+                                            </div>
+                                            <div class="list__user-item">
+                                                <div class="list__user-text">
+                                                    <span class="list__user-name header-text">
+                              Trẻ sơ sinh
+                            </span>
+                                                    <span class="list__user-item-des">Dưới 2 tuổi</span>
+                                                </div>
+                                                <div class="list__user-action">
+                                                    <span class="list__user-number"> 0 </span>
+                                                    <i class="fas fa-plus list__user-icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list__user-bottom">
+                                            <button class="
+                            list__user-btn-remove list__user-btn
+                            header-text
+                          ">
+                          Xóa
+                        </button>
+                                            <button class="
+                            list__user-btn-apply list__user-btn
+                            header-text
+                          ">
+                          Áp dụng
+                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="search__user-btn">
+                    <i class="fas fa-search search__user-btn-icon"></i>
+                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <ul class="header__right-list hide-tablet-mobile">
+                            <li class="header__right-item hide-pc-normal">
+                                <span class="header-text">Guide</span>
+                            </li>
+                            <li class="header__right-item hide-pc-normal tick">
+                                <a href="../Trang host/host.html" class="header-text">Host</a>
+                            </li>
+                            <li class="header__right-item">
+                                <a href="../Trang đăng ký/dangky.html" class="header-text">Đăng ký</a>
+                            </li>
+                            <li class="header__right-item">
+                                <span class="header-text">Đăng nhập</span>
+                            </li>
+                            <li class="header__right-item">
+                                <div class="header__language">
+                                    <img src="http://icons.iconarchive.com/icons/iconscity/flags/256/vietnam-icon.png" alt="" class="header__language-img" />
+                                    <span class="header__language-name">VND</span>
+                                </div>
+                                <i class="fas fa-sort-down header__right-item-icon"></i>
+                                <div class="list__language">
+                                    <ul class="list__language-left">
+                                        <li class="list__language-item">
+                                            <img src="http://icons.iconarchive.com/icons/iconscity/flags/256/vietnam-icon.png" alt="" class="header__language-img" />
+                                            <span class="header__language-name">Tiêng Việt</span>
+                                            <i class="fas fa-check header__language-icon icon-active"></i>
+                                        </li>
+                                        <li class="list__language-item">
+                                            <img src="https://tse1.mm.bing.net/th?id=OIP.MWdbcqEJ33Cr81-2mT4BAQHaEK&pid=Api&P=0&w=305&h=172" alt="" class="header__language-img" />
+                                            <span class="header__language-name">English</span>
+                                            <i class="fas fa-check header__language-icon"></i>
+                                        </li>
+                                        <li class="list__language-item">
+                                            <img src="https://tse4.mm.bing.net/th?id=OIP.bUtjodoZGSFZCc5PUQ-0QgHaE8&pid=Api&P=0&w=244&h=163" alt="" class="header__language-img" />
+                                            <span class="header__language-name">Korean</span>
+                                            <i class="fas fa-check header__language-icon"></i>
+                                        </li>
+                                    </ul>
+                                    <ul class="list__language-right">
+                                        <li class="list__language-item">
+                                            <span class="money-tyoe">VND</span>
+                                            <span class="header__language-name">Việt Nam Đồng</span>
+                                            <i class="fas fa-check header__language-icon icon-active"></i>
+                                        </li>
+                                        <li class="list__language-item">
+                                            <span class="money-tyoe">USD</span>
+                                            <span class="header__language-name">United States Dollar</span
+                        >
+                        <i class="fas fa-check header__language-icon"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="menu-tablet-mobile">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </header>
+         <div class="body-web">
+          <div class="body-heading">
+            <img
+              src="https://beta-api.luxstay.net/api/upload/file?storage=admins/12/qF7ukmI--Rwr2H5LwzVZwcXa.jpg"
+              class="body-heading__img"
+              alt=""
+            />
+            <img
+              src="https://beta-api.luxstay.net/api/upload/file?storage=admins/22/t-b8xr8yz9FzqbbZNNSyIy4v.jpg"
+              class="body-heading__img"
+              alt=""
+            />
+          </div>
+          <div class="body-container">
+            <div class="body-text">
+              <div class="body-text__content">
+                <h2 class="body-title body-text__primary">
+                  Chào mừng đến với Luxstay!
+                </h2>
+                <span class="body-des">
+                  Đặt chỗ ở, homestay, cho thuê xe, trải nghiệm và nhiều hơn nữa
+                  trên Luxstay
+                  <br />
+                  <a href="" class="body-text__link">Đăng nhập</a>
+                  hoặc <a href="../Trang đăng ký/dangky.html" class="body-text__link">Đăng ký</a> để trải
+                  nghiệm !
+                </span>
+                                </div>
+                    </div>
+                </div>
+                <div class="home__product-container">
+                    <div class="home-product">
+                        <div class="product-info">
+                            <div class="body-container body-container-second">
+                                <div class="body-text">
+                                    <div class="body-text__content">
+                                        <h2 class="body-title">
+                                            Địa điểm nổi bật
+                                        </h2>
+                                        <span class="body-des hide-on-mobile">
+                          Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới
+                          của bạn
+                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item__container">
+                                <div class="product-list">
+                                    <div class="row no-wrap">
+                                        <div class="col l-2-4 m-4 c-8">
+                                            <div class="product-item">
+                                                <img src="https://cdn.luxstay.com/home/location/location_1_1559734709.png" alt="" class="product-item__img" />
+                                                <div class="product-item__text">
+                                                    <h3 class="product-item__address item__address">Hà Nội</h3>
+                                                    <span class="product-item__number item__number">2013 chỗ ở</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-2-4 m-4 c-8">
+                                            <div class="product-item">
+                                                <img src="https://cdn.luxstay.com/home/location/location_1_1559734709.png" alt="" class="product-item__img" />
+                                                <div class="product-item__text">
+                                                    <h3 class="product-item__address item__address">Hà Nội</h3>
+                                                    <span class="product-item__number item__number">2013 chỗ ở</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-2-4 m-4 c-8">
+                                            <div class="product-item">
+                                                <img src="https://cdn.luxstay.com/home/location/location_1_1559734709.png" alt="" class="product-item__img" />
+                                                <div class="product-item__text">
+                                                    <h3 class="product-item__address item__address">Hà Nội</h3>
+                                                    <span class="product-item__number item__number">2013 chỗ ở</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-2-4 m-4 c-8">
+                                            <div class="product-item">
+                                                <img src="https://cdn.luxstay.com/home/location/location_1_1559734709.png" alt="" class="product-item__img" />
+                                                <div class="product-item__text">
+                                                    <h3 class="product-item__address item__address">Hà Nội</h3>
+                                                    <span class="product-item__number item__number">2013 chỗ ở</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-2-4 m-4 c-8">
+                                            <div class="product-item">
+                                                <img src="https://cdn.luxstay.com/home/location/location_1_1559734709.png" alt="" class="product-item__img" />
+                                                <div class="product-item__text">
+                                                    <h3 class="product-item__address item__address">Hà Nội</h3>
+                                                    <span class="product-item__number item__number">2013 chỗ ở</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-2-4 m-4 c-8">
+                                            <div class="product-item">
+                                                <img src="https://cdn.luxstay.com/home/location/location_1_1559734709.png" alt="" class="product-item__img" />
+                                                <div class="product-item__text">
+                                                    <h3 class="product-item__address item__address">Hà Nội</h3>
+                                                    <span class="product-item__number item__number">2013 chỗ ở</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-2-4 m-4 c-8">
+                                            <div class="product-item">
+                                                <img src="https://cdn.luxstay.com/home/location/location_1_1559734709.png" alt="" class="product-item__img" />
+                                                <div class="product-item__text">
+                                                    <h3 class="product-item__address item__address">Hà Nội</h3>
+                                                    <span class="product-item__number item__number">2013 chỗ ở</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-chevron-left btn btn-back btn-no-active "></i>
+                                    <i class="fas fa-chevron-right btn btn-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="product-info">
+                            <div class="body-container body-container-second">
+                                <div class="body-text">
+                                    <div class="body-text__content">
+                                        <h2 class="body-title">
+                                            Ưu đãi độc quyền
+                                        </h2>
+                                        <div class="body-des__container">
+                                            <span class="body-des">
+                                                Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!
+                                            </span>
+                                            <a class="body-des__right link-viewadd">
+                                                Xem Thêm
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product-item__container">
+                                <div class="product-list">
+                                    <div class="row no-wrap">
+                                        <div class="col l-4 m-5 c-10">
+                                            <div class="product-item product__item-second">
+                                                <img src="https://cdn.luxstay.com/home/event/event_2_1633051906.jpg" alt="" class="product-item__img" />
+                                            </div>
+                                        </div>
+                                        <div class="col l-4 m-5 c-10">
+                                            <div class="product-item product__item-second">
+                                                <img src="https://cdn.luxstay.com/home/event/event_2_1614658966.jpg" alt="" class="product-item__img" />
+                                            </div>
+                                        </div>
+                                        <div class="col l-4 m-5 c-10">
+                                            <div class="product-item product__item-second">
+                                                <img src="https://cdn.luxstay.com/home/event/event_2_1596604498.jpg" alt="" class="product-item__img" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-chevron-left btn btn-back btn-no-active hide-on-pc"></i>
+                                    <i class="fas fa-chevron-right btn btn-up  hide-on-pc"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="product-info">
+                            <div class="body-container body-container-second">
+                                <div class="body-text">
+                                    <div class="body-text__content">
+                                        <h2 class="body-title">
+                                            Gợi ý từ Luxstay
+                                        </h2>
+                                        <div class="body-des__container">
+                                            <span class="body-des">
+                                                Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item__container">
+                                <div class="product-list">
+                                    <div class="row no-wrap">
+                                        <div class="col l-3 m-5 c-10">
+                                            <div class="product-item product-item__three ">
+                                                <img src="https://cdn.luxstay.com/home/apartment/apartment_1_1625465608.jpg" alt="" class="product-item__img" />
+                                                <div class="product-introduce">
+                                                    <h5 class="product-introduce__name product-text">
+                                                        Vi vô ngoại ô Hà Nội
+                                                    </h5>
+                                                    <span class="product-introduce__des product-text">
+                                                        Trải nghiệm  không gian thoáng đãng cho chuyến đi ngay gần Hà Nội
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3 m-5 c-10">
+                                            <div class="product-item product-item__three ">
+                                                <img src="https://cdn.luxstay.com/home/apartment/apartment_1_1625465608.jpg" alt="" class="product-item__img" />
+                                                <div class="product-introduce">
+                                                    <h5 class="product-introduce__name product-text">
+                                                        Vi vô ngoại ô Hà Nội
+                                                    </h5>
+                                                    <span class="product-introduce__des product-text">
+                                                        Trải nghiệm  không gian thoáng đãng cho chuyến đi ngay gần Hà Nội
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3 m-5 c-10">
+                                            <div class="product-item product-item__three ">
+                                                <img src="https://cdn.luxstay.com/home/apartment/apartment_1_1625465608.jpg" alt="" class="product-item__img" />
+                                                <div class="product-introduce">
+                                                    <h5 class="product-introduce__name product-text">
+                                                        Vi vô ngoại ô Hà Nội
+                                                    </h5>
+                                                    <span class="product-introduce__des product-text">
+                                                        Trải nghiệm  không gian thoáng đãng cho chuyến đi ngay gần Hà Nội
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3 m-5 c-10">
+                                            <div class="product-item product-item__three ">
+                                                <img src="https://cdn.luxstay.com/home/apartment/apartment_1_1625465608.jpg" alt="" class="product-item__img" />
+                                                <div class="product-introduce">
+                                                    <h5 class="product-introduce__name product-text">
+                                                        Vi vô ngoại ô Hà Nội
+                                                    </h5>
+                                                    <span class="product-introduce__des product-text">
+                                                        Trải nghiệm  không gian thoáng đãng cho chuyến đi ngay gần Hà Nội
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-chevron-left btn btn-back btn-no-active hide-on-pc"></i>
+                                    <i class="fas fa-chevron-right btn btn-up  hide-on-pc"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="product-info">
+                            <div class="body-container body-container-second">
+                                <div class="body-text">
+                                    <div class="body-text__content">
+                                        <h2 class="body-title">
+                                            Gợi ý khám phá
+                                        </h2>
+                                        <span class="body-des">
+                                            Để mỗi chuyến đi là một hành trình truyền cảm hứng, mỗi căn phòng là một khoảng trời an yên
+                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item__container">
+                                <div class="product-list">
+                                    <div class="row no-wrap">
+                                        <div class="col l-4 m-10 c-10">
+                                            <div class="product-item product-item__four">
+                                                <img src="https://travel.luxstay.com/wp-content/uploads/2021/10/New-Yorks-dirtiest-hotel-9-deaths-occurred-750x536.jpg" alt="" class="product-item__img" />
+                                                <a href="" class="product-info__link product-ìnfo__top">Thông tin homestay</a>
+                                                <a href="" class="product-info__link product-ìnfo__bottom">5 resort hạng sang ở Việt Nam xuất hiện trên tạp chí du lịch Anh</a>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4 m-10 c-10">
+                                            <div class="product-item product-item__four">
+                                                <img src="https://travel.luxstay.com/wp-content/uploads/2021/10/New-Yorks-dirtiest-hotel-9-deaths-occurred-750x536.jpg" alt="" class="product-item__img" />
+                                                <a href="" class="product-info__link product-ìnfo__top">Thông tin homestay</a>
+                                                <a href="" class="product-info__link product-ìnfo__bottom">5 resort hạng sang ở Việt Nam xuất hiện trên tạp chí du lịch Anh</a>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4 m-10 c-10">
+                                            <div class="product-item product-item__four">
+                                                <img src="https://travel.luxstay.com/wp-content/uploads/2021/10/New-Yorks-dirtiest-hotel-9-deaths-occurred-750x536.jpg" alt="" class="product-item__img" />
+                                                <a href="" class="product-info__link product-ìnfo__top">Thông tin homestay</a>
+                                                <a href="" class="product-info__link product-ìnfo__bottom">5 resort hạng sang ở Việt Nam xuất hiện trên tạp chí du lịch Anh</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-chevron-left btn btn-back btn-no-active "></i>
+                                    <i class="fas fa-chevron-right btn btn-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="product-info">
+                            <div class="body-container body-container-second">
+                                <div class="body-text">
+                                    <div class="body-text__content">
+                                        <h2 class="body-title">
+                                            Hướng dẫn sử dụng
+                                        </h2>
+                                        <span class="body-des">
+                                            Đặt chỗ nhanh, thanh toán đơn giản, sử dụng dễ dàng
+                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item__container">
+                                <div class="product-list">
+                                    <div class="row no-wrap">
+                                        <div class="col l-4 m-5 c-10">
+                                            <div class="product-item product-item__five">
+                                                <img src="https://cdn.luxstay.com/home/theme/theme_3_1583838065.jpg" alt="" class="product-item__img" />
+
+                                            </div>
+                                        </div>
+                                        <div class="col l-4 m-5 c-10">
+                                            <div class="product-item product-item__five">
+                                                <img src="https://cdn.luxstay.com/home/theme/theme_3_1583838065.jpg" alt="" class="product-item__img" />
+                                            </div>
+                                        </div>
+                                        <div class="col l-4 m-5 c-10">
+                                            <div class="product-item product-item__five">
+                                                <img src="https://cdn.luxstay.com/home/theme/theme_3_1583838065.jpg" alt="" class="product-item__img" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-chevron-left btn btn-back btn-no-active "></i>
+                                    <i class="fas fa-chevron-right btn btn-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- body fotter -->
+                <div class="body__fotter">
+                    <div class="row">
+                        <div class="col l-6">
+                            <div class="body-download">
+                                <div class="body-download__top">
+                                    <div class="logo">
+                                        <svg version="1.1" viewBox="0 0 50 50" class="svg-icon svg-fill" style="width: 70px; height: 70px">
+                                    <path
+                                      pid="0"
+                                      d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"
+                                    ></path>
+                                  </svg>
+                                        <h1 class="logo-brand">LUXSTAY</h1>
+                                    </div>
+                                    <div class="body__download-des">
+                                        <h2 class="body__download__tittle">TÌM KIẾM CHỖ Ở GIÁ TỐT NHẤT</h2>
+                                        <p class="body__download__des">Luxstay hiện là nền tảng đặt phòng trực tuyến #1 Việt Nam. Đồng hành cùng chúng tôi, bạn có những chuyến đi mang đầy trải nghiệm. Với Luxstay, việc đặt chỗ ở, biệt thự nghỉ dưỡng, khách sạn, nhà riêng, chung cư...
+                                            trở nên nhanh chóng, thuận tiện và dễ dàng.</p>
+                                    </div>
+                                </div>
+                                <div class="body-download__bottom download">
+                                    <div class="body-download__qr download__qr">
+                                        <img src="https://www.luxstay.com/qr-code.png" alt="qr-img">
+                                    </div>
+                                    <div class="body-download__store download__store">
+                                        <a href="" class="body__download-link download-link">
+                                            <img src="https://www.luxstay.com/icons/apple-store.svg" alt="" class="">
+                                        </a>
+                                        <a href="" class="body__download-link download-link">
+                                            <img src="https://www.luxstay.com/icons/huawei.svg" alt="" class="">
+                                        </a>
+                                        <a href="" class="body__download-link download-link">
+                                            <img src="https://www.luxstay.com/icons/google-play.svg" alt="" class="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="body__bottom-img">
+                                <img src="https://www.luxstay.com/home/home-02.png" class="body__bottom-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <footer>
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col l-2-4 m-6">
+                        <div class="logo ">
+                            <svg version="1.1" viewBox="0 0 50 50" class="svg-icon svg-fill" style="width: 35px; height: 35px">
+                                <path
+                                  pid="0"
+                                  d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"
+                                ></path>
+                              </svg>
+                            <h1 class="fotter__brand logo-brand">LUXSTAY</h1>
+                        </div>
+                        <div class="footer__contact">
+                            <div class="contact">
+                                <div class="contact-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5 class="footer-tittle contact-tittle">
+                                        Messenger
+                                    </h5>
+                                    <a href="" class="footer-link contact-link">http://m.me/luxstay</a>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5 class="footer-tittle  contact-tittle">
+                                        Call center
+                                    </h5>
+                                    <a href="" class="footer-link contact-link">18006586 (Việt Nam)</a>
+                                    <a href="" class="footer-link contact-link">0889866666</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-6 hide-on-mobile">
+                        <div class="footer__introduce">
+                            <h4 class="footer-tittle footer__introduce-title">
+                                TOP HOMESTAY ĐƯỢC YÊU THÍCH
+                            </h4>
+                            <ul class="footer__introduce-list">
+                                <li class="footer-link footer__introduce-des">
+                                    Homestay Đà lạt
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    Homestay Nam Định
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    Homestay Hà Nội
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    Homestay Thành Phố HCM
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    Homestay Đà lạt
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    Homestay Đà lạt
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    Homestay Đà lạt
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 hide-on-mobile">
+                        <div class="footer__introduce ">
+                            <h4 class="footer-tittle footer__introduce-title">
+                                KHÔNG GIAN ƯU THÍCH
+                            </h4>
+                            <ul class="footer__introduce-list">
+                                <li class="footer-link footer__introduce-des">
+                                    Căn hộ
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    Biệt thự
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    Nhà riêng
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    Khách sạn
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 hide-on-mobile">
+                        <div class="footer__introduce ">
+                            <h4 class="footer-tittle footer__introduce-title">
+                                VỀ CHÚNG TÔI
+                            </h4>
+                            <ul class="footer__introduce-list">
+                                <li class="footer-link footer__introduce-des">
+                                    Blog
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    Điều khoản hoạt động
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    1800 6586
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    +84 8898 66666
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    info@luxstay.com
+                                </li>
+                                <li class="footer-link footer__introduce-des">
+                                    Trang thông tin dành cho chủ nhà
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 hide-on-mobile">
+                        <div class="footer__introduce ">
+                            <h4 class="footer-tittle footer__introduce-title">
+                                Tải ỨNG DỤNG LUXSTAY
+                            </h4>
+                            <div class="footer-download__bottom download">
+                                <div class="footer-download__qr download__qr">
+                                    <img src="https://www.luxstay.com/qr-code.png" alt="qr-img">
+                                </div>
+                                <div class="footer-download__store download__store">
+                                    <a href="" class="footer__download-link download-link">
+                                        <img src="https://www.luxstay.com/icons/apple-store.svg" alt="" class="">
+                                    </a>
+                                    <a href="" class="footer__download-link download-link">
+                                        <img src="https://www.luxstay.com/icons/huawei.svg" alt="" class="">
+                                    </a>
+                                    <a href="" class="footer__download-link download-link">
+                                        <img src="https://www.luxstay.com/icons/google-play.svg" alt="" class="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="row">
+                    <div class="col l-5 m-4 c-12">
+                        <div class="footer__introduce">
+                            <h4 class="footer-tittle footer__introduce-title">
+                                SECURE YOUR TRANSACTION
+                            </h4>
+                            <ul class="introduce-images">
+                                <li class="introduce-image introduce__imgge-first">
+                                    <img src="https://www.luxstay.com/icons/visa.svg" alt="">
+                                </li>
+                                <li class="introduce-image introduce__imgge-first">
+                                    <img src="https://www.luxstay.com/icons/mastercard.svg" alt="">
+                                </li>
+                                <li class="introduce-image introduce__imgge-first">
+                                    <img src="https://www.luxstay.com/icons/maestro.svg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="footer__introduce footer__introduce-flex">
+                            <h4 class="footer-tittle footer__introduce-title">
+                                CERTIFICATION
+                            </h4>
+                            <ul class="introduce-images introduce-images_res ">
+                                <li class="introduce-image introduce-image__second">
+                                    <a href="" class="introduce-image__link">
+                                        <img src="https://www.luxstay.com/bct.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="introduce-image introduce-image__second">
+                                    <a href="" class="introduce-image__link">
+                                        <img src="https://www.luxstay.com/dmca.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="footer__introduce">
+                            <h4 class="footer-tittle footer__introduce-title">
+                                FOLLOW US
+                            </h4>
+                            <ul class="introduce-images ">
+                                <li class="introduce-image introduce-image-three">
+                                    <a href="" class="introduce-image__link introduce-image__link-three">
+                                        <i class="fab fa-instagram introduce-image__icon"></i>
+                                    </a>
+                                </li>
+                                <li class="introduce-image introduce-image-three">
+                                    <a href="" class="introduce-image__link introduce-image__link-three">
+                                        <i class="fab fa-youtube introduce-image__icon"></i>
+                                    </a>
+                                </li>
+                                <li class="introduce-image introduce-image-three">
+                                    <a href="" class="introduce-image__link introduce-image__link-three">
+                                        <i class="fab fa-facebook-f introduce-image__icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__policy">
+                <p class="footer__policy-text">
+                    © 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam - MSDN: 0108308449. Mọi hành vi sao chép đều là phạm pháp nếu không có sự cho phép bằng văn bản của chúng tôi.
+                </p>
+                <p class="footer__policy-text">
+                    Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa Nam, quận Hoàn Kiếm, Hà Nội. Email: info@luxstay.com, Số điện thoại: 18006586.
+                </p>
+                <p class="footer__policy-text">
+                    Số Giấy chứng nhận đăng ký doanh nghiệp: 0108308449, ngày cấp: 06/06/2018, nơi cấp: Sở Kế hoạch và Đầu tư TP Hà Nội
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- nav header -->
+    <div class="modal"></div>
+    <div class="header__nav-mobile">
+        <ul class="nav__mobile-list">
+            <li class="nav__mobile-item">
+                <div class="nav-mobile__logo">
+                    <svg version="1.1" viewBox="0 0 50 50" class="svg-icon svg-fill" style="width: 40px; height: 40px">
+              <path
+                pid="0"
+                d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"
+              ></path>
+            </svg>
+                    <span>LUXSTAY</span>
+                </div>
+                <i class="fas fa-times"></i>
+            </li>
+            <li class="nav__mobile-item">
+                <span class="header-mobile__text">Guide</span>
+            </li>
+            <li class="nav__mobile-item">
+                <a href="../Trang host/host.html" class="header-mobile__text">Host</a>
+            </li>
+            <li class="nav__mobile-item">
+                <a href="../Trang đăng ký/dangky.html" class="header-mobile__text">Đăng ký</a>
+            </li>
+            <li class="nav__mobile-item">
+                <a href="../Trang đăng nhập/dangnhap.html" class="header-mobile__text">Đăng nhập</a>
+            </li>
+            <li class="nav__mobile-item">
+                <div class="header__language">
+                    <img src="http://icons.iconarchive.com/icons/iconscity/flags/256/vietnam-icon.png" alt="" class="header__language-img" />
+                    <span class="header__language-name">VND</span>
+                </div>
+                <i class="fas fa-sort-down nav__mobile-icon"></i>
+                <div class="list__language list__language-mobile">
+                    <ul class="list__language-left">
+                        <li class="list__language-item">
+                            <img src="http://icons.iconarchive.com/icons/iconscity/flags/256/vietnam-icon.png" alt="" class="header__language-img" />
+                            <span class="header__language-name">Tiêng Việt</span>
+                            <i class="fas fa-check list__language-icon icon-active"></i>
+                        </li>
+                        <li class="list__language-item">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.MWdbcqEJ33Cr81-2mT4BAQHaEK&pid=Api&P=0&w=305&h=172" alt="" class="header__language-img" />
+                            <span class="header__language-name">English</span>
+                            <i class="fas fa-check list__language-icon"></i>
+                        </li>
+                        <li class="list__language-item">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.bUtjodoZGSFZCc5PUQ-0QgHaE8&pid=Api&P=0&w=244&h=163" alt="" class="header__language-img" />
+                            <span class="header__language-name">Korean</span>
+                            <i class="fas fa-check list__language-icon"></i>
+                        </li>
+                    </ul>
+                    <ul class="list__language-right">
+                        <li class="list__language-item">
+                            <span class="money-tyoe">VND</span>
+
+                            <span class="header__language-name">Việt Nam Đồng</span>
+                            <i class="fas fa-check list__language-icon icon-active"></i>
+                        </li>
+                        <li class="list__language-item">
+                            <span class="money-tyoe">USD</span>
+                            <span class="header__language-name">United States Dollar</span>
+                            <i class="fas fa-check list__language-icon"></i>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="phone-call">
+        <i class="fas fa-phone"></i>
+    </div>
+    <div class="mes">
+        <i class="far fa-envelope"></i>
+    </div>
+    <div class="chat-mes">
+        <i class="far fa-comment chat-mes__icon"></i>
+        <span class="chat-mes__text">CHAT NOW_HỖ TRỢ KHÁCH HÀNG</span>
+    </div>
+    <div class="chat-box">
+        <div class="box__top">
+            <div class="box__heading">
+                <h5 class="box__des">Tin nhắn</h5>
+                <i class="fas fa-times box-icon"></i>
+            </div>
+            <div class="box__body">
+                <div class="box__img">
+                    <img src="https://lh3.googleusercontent.com/-1oQ3jGoZIkk/X0hkRfBDeLI/AAAAAAAFHxc/YDcRifaQ_OM682n4oMO9enf0kOFEij8SACLcBGAsYHQ/117671624_6414337367.png?imgmax=3000" alt="">
+                </div>
+                <div class="box__text">
+                    <h5 class="box__title">Chăm sóc khách hàng</h5>
+                    <span class="box__name">Customer Service</span>
+                </div>
+            </div>
+        </div>
+        <div class="box__bottom">
+            <input type="text" class="box__input" placeholder="Hãy nhập tin nhắn để chat">
+            <div class="box__function">
+                <button class="box__button">Tùy chọn</button>
+                <button class="box__button">Đăng nhập</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./jstrangchu.js"></script>
+
+</html>

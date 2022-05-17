@@ -1,0 +1,204 @@
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .hide-pc-normal {
+        display: none;
+    }
+    footer {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .body-download__store {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 30px;
+    }
+    .body__download-link {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .body__download-link img {
+        width: 180px;
+        height: 50px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .hide-tablet-mobile {
+        display: none;
+    }
+    .header__search-bar {
+        width: 180px;
+    }
+    .search-bar__input {
+        width: 100%;
+    }
+    .header__right {
+        flex: 1;
+    }
+    .menu-tablet-mobile {
+        display: flex;
+    }
+    .list__language {
+        top: calc(100% + 12px);
+        display: block;
+        padding: 5px 20px;
+        right: 5px;
+        width: 90%;
+    }
+    .list__language-left::after {
+        display: none;
+    }
+    .list__language-right {
+        padding: 0;
+    }
+    .header__language-name {
+        flex-shrink: 0;
+    }
+    .header__search-user,
+    .nav__mobile-item {
+        cursor: default;
+    }
+    .product-item__three .product-item__img {
+        height: 200px;
+    }
+    .product-item__four .product-item__img {
+        height: 350px;
+    }
+    .product-item__five .product-item__img {
+        height: 200px;
+    }
+    .download__qr {
+        display: none;
+    }
+    .body__download-des {
+        margin-bottom: 20px;
+    }
+    .footer__download-link img {
+        width: 95%;
+        height: auto;
+    }
+    .introduce__imgge-first img {
+        width: 100%;
+        height: 50px;
+    }
+    .footer__introduce-title {
+        font-size: 1.4rem;
+    }
+    .footer__introduce {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 739px) {
+    .btn {
+        display: none;
+    }
+    .header__left-logo {
+        display: none;
+    }
+    .header__search-date,
+    .header__search-user {
+        display: none;
+    }
+     :root {
+        --height-header: 80px;
+    }
+    .header__search-bar {
+        flex: 1;
+        width: 300px;
+        padding: 15px 10px;
+    }
+    .header__left-search {
+        margin-left: 0;
+    }
+    .grid.wide {
+        padding: 0 15px;
+    }
+    .body-container__second {
+        margin: 20px 0 10px;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    .link-viewadd {
+        display: none;
+    }
+    .product-item__four .product-item__img {
+        height: 200px;
+    }
+    .product-ìnfo__bottom {
+        font-size: 1.8rem;
+    }
+    .product-ìnfo__top {
+        font-size: 1.5rem;
+    }
+    .product-info__link {
+        left: 10px;
+    }
+    .body__download-link {
+        display: block;
+    }
+    .body__download-link img {
+        width: 180px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    .body__bottom-img {
+        height: 345px;
+    }
+    .introduce-image__second img {
+        width: 100%;
+    }
+    .introduce-images_res {
+        width: 100%;
+    }
+    .introduce-images_res {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .introduce-image__link img {
+        height: 100%;
+    }
+    .introduce__imgge-first img {
+        height: 100%;
+    }
+    .logo-brand {
+        font-size: 2rem;
+        margin-left: 15px;
+    }
+    .body__download__tittle {
+        font-size: 2rem;
+        margin-bottom: 28px;
+    }
+    .chat-mes {
+        display: none;
+    }
+    .chat-box {
+        width: unset;
+        height: unset;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .box__heading {
+        display: flex;
+    }
+    .mes {
+        display: block;
+    }
+}
